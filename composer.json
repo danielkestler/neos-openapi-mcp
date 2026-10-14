@@ -1,0 +1,29 @@
+{
+  "name": "neos/openapi-mcp",
+  "description": "Expose the operations of a neos/openapi as Model Context Protocol tools, using the official MCP PHP SDK.",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": ">=8.4",
+    "neos/openapi": "*",
+    "mcp/sdk": "^0.8.1",
+    "psr/http-message": "^1 || ^2",
+    "psr/http-factory": "^1",
+    "psr/http-server-handler": "^1",
+    "psr/http-server-middleware": "^1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^11.5",
+    "guzzlehttp/psr7": "^2.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "Neos\\OpenApi\\Mcp\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Neos\\OpenApi\\Mcp\\Tests\\": "tests/"
+    }
+  }
+}
