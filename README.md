@@ -135,3 +135,7 @@ cd DistributionPackages/neos-openapi-mcp && ../../bin/phpunit
 
 `tests/bootstrap.php` uses the library's own `vendor/` if present, else the autoloader of the project it is
 installed in.
+
+## License
+
+MIT, see [LICENSE](LICENSE).
